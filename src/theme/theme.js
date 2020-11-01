@@ -1,12 +1,10 @@
-const colours = {
-  primaryBlue: '#215184',
-  fontColour: '#545454',
-  white: '#ffffff',
-};
+import media from './media';
+import colours from './colours';
 
 export const theme = {
-  colours: { ...colours },
-  font: {
+  colours,
+  media,
+  fonts: {
     sans: 'Brandon Grotesque, Arial, Helvetica, sans-serif',
     primary: { fontWeight: 'bold', fontStyle: 'normal' },
   },
