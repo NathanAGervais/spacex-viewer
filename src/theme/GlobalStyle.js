@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import { Normalize } from 'styled-normalize';
+import { normalize } from 'styled-normalize';
 
 import BrandonGrotesqueBlackWoff2 from '../assets/font/BrandonGrotesque-Black.woff2';
 import BrandonGrotesqueBlackWoff from '../assets/font/BrandonGrotesque-Black.woff';
@@ -22,14 +22,11 @@ import BrandonGrotesqueMediumWoff from '../assets/font/BrandonGrotesque-Medium.w
 import BrandonGrotesqueMediumTtf from '../assets/font/BrandonGrotesque-Medium.ttf';
 
 const GlobalStyle = createGlobalStyle`
-${Normalize}
-*{
-  font-size: 1px; /* for using rem units*/
-}
-body {
-  box-sizing: border-box;
-  font-family: ${({ theme }) => theme.font.sans};
-  font-size: 16rem;
+ ${normalize}
+body{
+   box-sizing: border-box;
+   font-family: ${({ theme }) => theme.fonts.sans};
+   font-size: 1em;
 }
 
 @font-face {
